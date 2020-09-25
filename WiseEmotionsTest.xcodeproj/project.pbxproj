@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EECB981A251E45AF00C04ED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB9819251E45AF00C04ED3 /* AppDelegate.swift */; };
+		EECB981C251E45AF00C04ED3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB981B251E45AF00C04ED3 /* SceneDelegate.swift */; };
+		EECB981E251E45AF00C04ED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB981D251E45AF00C04ED3 /* ViewController.swift */; };
+		EECB9821251E45AF00C04ED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB981F251E45AF00C04ED3 /* Main.storyboard */; };
+		EECB9824251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECB9822251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodeld */; };
+		EECB9826251E45B200C04ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECB9825251E45B200C04ED3 /* Assets.xcassets */; };
+		EECB9829251E45B200C04ED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB9827251E45B200C04ED3 /* LaunchScreen.storyboard */; };
+		EECB9834251E45B300C04ED3 /* WiseEmotionsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB9833251E45B300C04ED3 /* WiseEmotionsTestTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EECB9830251E45B300C04ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EECB980E251E45AF00C04ED3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EECB9815251E45AF00C04ED3;
+			remoteInfo = WiseEmotionsTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EECB9816251E45AF00C04ED3 /* WiseEmotionsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiseEmotionsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECB9819251E45AF00C04ED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EECB981B251E45AF00C04ED3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EECB981D251E45AF00C04ED3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EECB9820251E45AF00C04ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EECB9823251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WiseEmotionsTest.xcdatamodel; sourceTree = "<group>"; };
+		EECB9825251E45B200C04ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EECB9828251E45B200C04ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EECB982A251E45B200C04ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECB982F251E45B300C04ED3 /* WiseEmotionsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiseEmotionsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECB9833251E45B300C04ED3 /* WiseEmotionsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiseEmotionsTestTests.swift; sourceTree = "<group>"; };
+		EECB9835251E45B300C04ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EECB9813251E45AF00C04ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB982C251E45B300C04ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EECB980D251E45AF00C04ED3 = {
+			isa = PBXGroup;
+			children = (
+				EECB9818251E45AF00C04ED3 /* WiseEmotionsTest */,
+				EECB9832251E45B300C04ED3 /* WiseEmotionsTestTests */,
+				EECB9817251E45AF00C04ED3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EECB9817251E45AF00C04ED3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EECB9816251E45AF00C04ED3 /* WiseEmotionsTest.app */,
+				EECB982F251E45B300C04ED3 /* WiseEmotionsTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EECB9818251E45AF00C04ED3 /* WiseEmotionsTest */ = {
+			isa = PBXGroup;
+			children = (
+				EECB9819251E45AF00C04ED3 /* AppDelegate.swift */,
+				EECB981B251E45AF00C04ED3 /* SceneDelegate.swift */,
+				EECB981D251E45AF00C04ED3 /* ViewController.swift */,
+				EECB981F251E45AF00C04ED3 /* Main.storyboard */,
+				EECB9825251E45B200C04ED3 /* Assets.xcassets */,
+				EECB9827251E45B200C04ED3 /* LaunchScreen.storyboard */,
+				EECB982A251E45B200C04ED3 /* Info.plist */,
+				EECB9822251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodeld */,
+			);
+			path = WiseEmotionsTest;
+			sourceTree = "<group>";
+		};
+		EECB9832251E45B300C04ED3 /* WiseEmotionsTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				EECB9833251E45B300C04ED3 /* WiseEmotionsTestTests.swift */,
+				EECB9835251E45B300C04ED3 /* Info.plist */,
+			);
+			path = WiseEmotionsTestTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EECB9815251E45AF00C04ED3 /* WiseEmotionsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECB9838251E45B300C04ED3 /* Build configuration list for PBXNativeTarget "WiseEmotionsTest" */;
+			buildPhases = (
+				EECB9812251E45AF00C04ED3 /* Sources */,
+				EECB9813251E45AF00C04ED3 /* Frameworks */,
+				EECB9814251E45AF00C04ED3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiseEmotionsTest;
+			productName = WiseEmotionsTest;
+			productReference = EECB9816251E45AF00C04ED3 /* WiseEmotionsTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EECB982E251E45B300C04ED3 /* WiseEmotionsTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECB983B251E45B300C04ED3 /* Build configuration list for PBXNativeTarget "WiseEmotionsTestTests" */;
+			buildPhases = (
+				EECB982B251E45B300C04ED3 /* Sources */,
+				EECB982C251E45B300C04ED3 /* Frameworks */,
+				EECB982D251E45B300C04ED3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EECB9831251E45B300C04ED3 /* PBXTargetDependency */,
+			);
+			name = WiseEmotionsTestTests;
+			productName = WiseEmotionsTestTests;
+			productReference = EECB982F251E45B300C04ED3 /* WiseEmotionsTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EECB980E251E45AF00C04ED3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Filippo Giove";
+				TargetAttributes = {
+					EECB9815251E45AF00C04ED3 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					EECB982E251E45B300C04ED3 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = EECB9815251E45AF00C04ED3;
+					};
+				};
+			};
+			buildConfigurationList = EECB9811251E45AF00C04ED3 /* Build configuration list for PBXProject "WiseEmotionsTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EECB980D251E45AF00C04ED3;
+			productRefGroup = EECB9817251E45AF00C04ED3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EECB9815251E45AF00C04ED3 /* WiseEmotionsTest */,
+				EECB982E251E45B300C04ED3 /* WiseEmotionsTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EECB9814251E45AF00C04ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB9829251E45B200C04ED3 /* LaunchScreen.storyboard in Resources */,
+				EECB9826251E45B200C04ED3 /* Assets.xcassets in Resources */,
+				EECB9821251E45AF00C04ED3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB982D251E45B300C04ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EECB9812251E45AF00C04ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB981E251E45AF00C04ED3 /* ViewController.swift in Sources */,
+				EECB981A251E45AF00C04ED3 /* AppDelegate.swift in Sources */,
+				EECB981C251E45AF00C04ED3 /* SceneDelegate.swift in Sources */,
+				EECB9824251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB982B251E45B300C04ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB9834251E45B300C04ED3 /* WiseEmotionsTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EECB9831251E45B300C04ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EECB9815251E45AF00C04ED3 /* WiseEmotionsTest */;
+			targetProxy = EECB9830251E45B300C04ED3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EECB981F251E45AF00C04ED3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EECB9820251E45AF00C04ED3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EECB9827251E45B200C04ED3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EECB9828251E45B200C04ED3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EECB9836251E45B300C04ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EECB9837251E45B300C04ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EECB9839251E45B300C04ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TA82UEXLK6;
+				INFOPLIST_FILE = WiseEmotionsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.doadoa.WiseEmotionsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EECB983A251E45B300C04ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TA82UEXLK6;
+				INFOPLIST_FILE = WiseEmotionsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.doadoa.WiseEmotionsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EECB983C251E45B300C04ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TA82UEXLK6;
+				INFOPLIST_FILE = WiseEmotionsTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.doadoa.WiseEmotionsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiseEmotionsTest.app/WiseEmotionsTest";
+			};
+			name = Debug;
+		};
+		EECB983D251E45B300C04ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TA82UEXLK6;
+				INFOPLIST_FILE = WiseEmotionsTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.doadoa.WiseEmotionsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiseEmotionsTest.app/WiseEmotionsTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EECB9811251E45AF00C04ED3 /* Build configuration list for PBXProject "WiseEmotionsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB9836251E45B300C04ED3 /* Debug */,
+				EECB9837251E45B300C04ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EECB9838251E45B300C04ED3 /* Build configuration list for PBXNativeTarget "WiseEmotionsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB9839251E45B300C04ED3 /* Debug */,
+				EECB983A251E45B300C04ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EECB983B251E45B300C04ED3 /* Build configuration list for PBXNativeTarget "WiseEmotionsTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB983C251E45B300C04ED3 /* Debug */,
+				EECB983D251E45B300C04ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EECB9822251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EECB9823251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodel */,
+			);
+			currentVersion = EECB9823251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodel */;
+			path = WiseEmotionsTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EECB980E251E45AF00C04ED3 /* Project object */;
+}
