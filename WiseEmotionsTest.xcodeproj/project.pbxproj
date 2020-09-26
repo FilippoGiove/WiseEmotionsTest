@@ -3,18 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		437AAB6ACA4661AD4E80F1BF /* Pods_WiseEmotionsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4045F2F9F43849FBAD913E /* Pods_WiseEmotionsTest.framework */; };
+		A9FCF43B8F1482CF6556CB49 /* Pods_WiseEmotionsTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516D5C52650A6E05C1873511 /* Pods_WiseEmotionsTestTests.framework */; };
+		EE7E2BCC251E923E00BBFB8C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E2BCB251E923E00BBFB8C /* Utilities.swift */; };
+		EE98F417251EBAE60085A353 /* PokemonImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98F416251EBAE60085A353 /* PokemonImageCell.swift */; };
 		EECB981A251E45AF00C04ED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB9819251E45AF00C04ED3 /* AppDelegate.swift */; };
-		EECB981C251E45AF00C04ED3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB981B251E45AF00C04ED3 /* SceneDelegate.swift */; };
-		EECB981E251E45AF00C04ED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB981D251E45AF00C04ED3 /* ViewController.swift */; };
+		EECB981E251E45AF00C04ED3 /* PokemoneListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB981D251E45AF00C04ED3 /* PokemoneListViewController.swift */; };
 		EECB9821251E45AF00C04ED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB981F251E45AF00C04ED3 /* Main.storyboard */; };
 		EECB9824251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECB9822251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodeld */; };
 		EECB9826251E45B200C04ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECB9825251E45B200C04ED3 /* Assets.xcassets */; };
 		EECB9829251E45B200C04ED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB9827251E45B200C04ED3 /* LaunchScreen.storyboard */; };
 		EECB9834251E45B300C04ED3 /* WiseEmotionsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB9833251E45B300C04ED3 /* WiseEmotionsTestTests.swift */; };
+		EECB9841251E498500C04ED3 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB9840251E498500C04ED3 /* PokemonModel.swift */; };
+		EECB9845251E4A4800C04ED3 /* PokemonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB9844251E4A4800C04ED3 /* PokemonListViewModel.swift */; };
+		EECB9848251E4F7600C04ED3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB9847251E4F7600C04ED3 /* Constants.swift */; };
+		EEFDDFE6251E93B0004BDEA9 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDDFE4251E93B0004BDEA9 /* PokemonCell.swift */; };
+		EEFDDFE7251E93B0004BDEA9 /* PokemonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFDDFE5251E93B0004BDEA9 /* PokemonCell.xib */; };
+		EEFDDFF0251E94E7004BDEA9 /* FontConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDDFED251E94E7004BDEA9 /* FontConvertible.swift */; };
+		EEFDDFF1251E94E7004BDEA9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDDFEE251E94E7004BDEA9 /* Fonts.swift */; };
+		EEFDDFF2251E94E7004BDEA9 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDDFEF251E94E7004BDEA9 /* CustomFont.swift */; };
+		EEFDDFF5251E94F1004BDEA9 /* CommonLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDDFF4251E94F1004BDEA9 /* CommonLabels.swift */; };
+		EEFDDFF8251E956A004BDEA9 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDDFF7251E956A004BDEA9 /* CustomLabel.swift */; };
+		EEFDDFFB251E958F004BDEA9 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDDFFA251E958F004BDEA9 /* Placeholder.swift */; };
+		EEFDDFFE251E95C6004BDEA9 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDDFFD251E95C6004BDEA9 /* UIFontExtension.swift */; };
+		EEFDE000251EA15C004BDEA9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDDFFF251EA15C004BDEA9 /* Utils.swift */; };
+		EEFDE002251EA6BC004BDEA9 /* ThemeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDE001251EA6BC004BDEA9 /* ThemeUtils.swift */; };
+		EEFDE003251EA7DA004BDEA9 /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEFDDFEA251E9476004BDEA9 /* GothamRounded-Book.otf */; };
+		EEFDE004251EA7DD004BDEA9 /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEFDDFE9251E9476004BDEA9 /* GothamRounded-Bold.otf */; };
+		EEFDE005251EA7E0004BDEA9 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEFDDFEB251E9476004BDEA9 /* GothamRounded-Medium.otf */; };
+		EEFDE007251EAE6E004BDEA9 /* PokemonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDE006251EAE6E004BDEA9 /* PokemonDetailViewModel.swift */; };
+		EEFDE009251EAE9D004BDEA9 /* PokemonDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDE008251EAE9D004BDEA9 /* PokemonDetailsModel.swift */; };
+		EEFDE00D251EB61A004BDEA9 /* PokemonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFDE00C251EB61A004BDEA9 /* PokemonDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49C275F37AB0FFECE6546157 /* Pods-WiseEmotionsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTest.release.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest.release.xcconfig"; sourceTree = "<group>"; };
+		516D5C52650A6E05C1873511 /* Pods_WiseEmotionsTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiseEmotionsTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4045F2F9F43849FBAD913E /* Pods_WiseEmotionsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiseEmotionsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C952C5CDDEECB61EE388CEA4 /* Pods-WiseEmotionsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTest.debug.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E078E2868694696228DF4CD0 /* Pods-WiseEmotionsTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTestTests.release.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTestTests/Pods-WiseEmotionsTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		E67CD154EC5195C9DFA353AC /* Pods-WiseEmotionsTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTestTests.debug.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTestTests/Pods-WiseEmotionsTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE7E2BCB251E923E00BBFB8C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		EE98F416251EBAE60085A353 /* PokemonImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImageCell.swift; sourceTree = "<group>"; };
 		EECB9816251E45AF00C04ED3 /* WiseEmotionsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiseEmotionsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECB9819251E45AF00C04ED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EECB981B251E45AF00C04ED3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EECB981D251E45AF00C04ED3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EECB981D251E45AF00C04ED3 /* PokemoneListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemoneListViewController.swift; sourceTree = "<group>"; };
 		EECB9820251E45AF00C04ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EECB9823251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WiseEmotionsTest.xcdatamodel; sourceTree = "<group>"; };
 		EECB9825251E45B200C04ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +70,26 @@
 		EECB982F251E45B300C04ED3 /* WiseEmotionsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiseEmotionsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECB9833251E45B300C04ED3 /* WiseEmotionsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiseEmotionsTestTests.swift; sourceTree = "<group>"; };
 		EECB9835251E45B300C04ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECB9840251E498500C04ED3 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		EECB9844251E4A4800C04ED3 /* PokemonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewModel.swift; sourceTree = "<group>"; };
+		EECB9847251E4F7600C04ED3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEFDDFE4251E93B0004BDEA9 /* PokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
+		EEFDDFE5251E93B0004BDEA9 /* PokemonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonCell.xib; sourceTree = "<group>"; };
+		EEFDDFE9251E9476004BDEA9 /* GothamRounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Bold.otf"; sourceTree = "<group>"; };
+		EEFDDFEA251E9476004BDEA9 /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
+		EEFDDFEB251E9476004BDEA9 /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
+		EEFDDFED251E94E7004BDEA9 /* FontConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontConvertible.swift; sourceTree = "<group>"; };
+		EEFDDFEE251E94E7004BDEA9 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EEFDDFEF251E94E7004BDEA9 /* CustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		EEFDDFF4251E94F1004BDEA9 /* CommonLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonLabels.swift; sourceTree = "<group>"; };
+		EEFDDFF7251E956A004BDEA9 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		EEFDDFFA251E958F004BDEA9 /* Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		EEFDDFFD251E95C6004BDEA9 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		EEFDDFFF251EA15C004BDEA9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		EEFDE001251EA6BC004BDEA9 /* ThemeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeUtils.swift; sourceTree = "<group>"; };
+		EEFDE006251EAE6E004BDEA9 /* PokemonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewModel.swift; sourceTree = "<group>"; };
+		EEFDE008251EAE9D004BDEA9 /* PokemonDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailsModel.swift; sourceTree = "<group>"; };
+		EEFDE00C251EB61A004BDEA9 /* PokemonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437AAB6ACA4661AD4E80F1BF /* Pods_WiseEmotionsTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +105,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FCF43B8F1482CF6556CB49 /* Pods_WiseEmotionsTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B75CF1397519B633575F7C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C952C5CDDEECB61EE388CEA4 /* Pods-WiseEmotionsTest.debug.xcconfig */,
+				49C275F37AB0FFECE6546157 /* Pods-WiseEmotionsTest.release.xcconfig */,
+				E67CD154EC5195C9DFA353AC /* Pods-WiseEmotionsTestTests.debug.xcconfig */,
+				E078E2868694696228DF4CD0 /* Pods-WiseEmotionsTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4B6C6B6E973232C0E13BB3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B4045F2F9F43849FBAD913E /* Pods_WiseEmotionsTest.framework */,
+				516D5C52650A6E05C1873511 /* Pods_WiseEmotionsTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EECB980D251E45AF00C04ED3 = {
 			isa = PBXGroup;
 			children = (
 				EECB9818251E45AF00C04ED3 /* WiseEmotionsTest */,
 				EECB9832251E45B300C04ED3 /* WiseEmotionsTestTests */,
 				EECB9817251E45AF00C04ED3 /* Products */,
+				7B75CF1397519B633575F7C0 /* Pods */,
+				B4B6C6B6E973232C0E13BB3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,9 +155,10 @@
 		EECB9818251E45AF00C04ED3 /* WiseEmotionsTest */ = {
 			isa = PBXGroup;
 			children = (
+				EEFDDFE8251E9455004BDEA9 /* Resources */,
+				EECB9846251E4A9700C04ED3 /* MVVM */,
+				EECB9842251E49A400C04ED3 /* Common */,
 				EECB9819251E45AF00C04ED3 /* AppDelegate.swift */,
-				EECB981B251E45AF00C04ED3 /* SceneDelegate.swift */,
-				EECB981D251E45AF00C04ED3 /* ViewController.swift */,
 				EECB981F251E45AF00C04ED3 /* Main.storyboard */,
 				EECB9825251E45B200C04ED3 /* Assets.xcassets */,
 				EECB9827251E45B200C04ED3 /* LaunchScreen.storyboard */,
@@ -102,6 +177,131 @@
 			path = WiseEmotionsTestTests;
 			sourceTree = "<group>";
 		};
+		EECB983E251E472D00C04ED3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDE00B251EB602004BDEA9 /* VC */,
+				EEFDE00A251EB5F9004BDEA9 /* Cell */,
+				EEFDDFF6251E953B004BDEA9 /* Common */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EECB983F251E497700C04ED3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EECB9840251E498500C04ED3 /* PokemonModel.swift */,
+				EEFDE008251EAE9D004BDEA9 /* PokemonDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EECB9842251E49A400C04ED3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDDFFC251E95B5004BDEA9 /* Extension */,
+				EEFDDFF9251E958F004BDEA9 /* Theme */,
+				EEFDDFF3251E94F1004BDEA9 /* Label */,
+				EEFDDFEC251E94E7004BDEA9 /* Font */,
+				EECB9847251E4F7600C04ED3 /* Constants.swift */,
+				EE7E2BCB251E923E00BBFB8C /* Utilities.swift */,
+				EEFDDFFF251EA15C004BDEA9 /* Utils.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EECB9843251E4A0D00C04ED3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EECB9844251E4A4800C04ED3 /* PokemonListViewModel.swift */,
+				EEFDE006251EAE6E004BDEA9 /* PokemonDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EECB9846251E4A9700C04ED3 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EECB983E251E472D00C04ED3 /* View */,
+				EECB983F251E497700C04ED3 /* Model */,
+				EECB9843251E4A0D00C04ED3 /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		EEFDDFE8251E9455004BDEA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDDFE9251E9476004BDEA9 /* GothamRounded-Bold.otf */,
+				EEFDDFEA251E9476004BDEA9 /* GothamRounded-Book.otf */,
+				EEFDDFEB251E9476004BDEA9 /* GothamRounded-Medium.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EEFDDFEC251E94E7004BDEA9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDDFED251E94E7004BDEA9 /* FontConvertible.swift */,
+				EEFDDFEE251E94E7004BDEA9 /* Fonts.swift */,
+				EEFDDFEF251E94E7004BDEA9 /* CustomFont.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EEFDDFF3251E94F1004BDEA9 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDDFF4251E94F1004BDEA9 /* CommonLabels.swift */,
+			);
+			name = Label;
+			path = ../../../../../DOADOA/Clienti/Aesyra/SourceCode/iOS/AesyBite/AesyBite/Common/Label;
+			sourceTree = "<group>";
+		};
+		EEFDDFF6251E953B004BDEA9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDDFF7251E956A004BDEA9 /* CustomLabel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EEFDDFF9251E958F004BDEA9 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDE001251EA6BC004BDEA9 /* ThemeUtils.swift */,
+				EEFDDFFA251E958F004BDEA9 /* Placeholder.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EEFDDFFC251E95B5004BDEA9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDDFFD251E95C6004BDEA9 /* UIFontExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EEFDE00A251EB5F9004BDEA9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDDFE4251E93B0004BDEA9 /* PokemonCell.swift */,
+				EEFDDFE5251E93B0004BDEA9 /* PokemonCell.xib */,
+				EE98F416251EBAE60085A353 /* PokemonImageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EEFDE00B251EB602004BDEA9 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EECB981D251E45AF00C04ED3 /* PokemoneListViewController.swift */,
+				EEFDE00C251EB61A004BDEA9 /* PokemonDetailsViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EECB9838251E45B300C04ED3 /* Build configuration list for PBXNativeTarget "WiseEmotionsTest" */;
 			buildPhases = (
+				2981DED16156D23823B202BF /* [CP] Check Pods Manifest.lock */,
 				EECB9812251E45AF00C04ED3 /* Sources */,
 				EECB9813251E45AF00C04ED3 /* Frameworks */,
 				EECB9814251E45AF00C04ED3 /* Resources */,
+				0FE97921935FA0DCEB9519EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EECB983B251E45B300C04ED3 /* Build configuration list for PBXNativeTarget "WiseEmotionsTestTests" */;
 			buildPhases = (
+				B0DA8064DF1D03B0FE447AF0 /* [CP] Check Pods Manifest.lock */,
 				EECB982B251E45B300C04ED3 /* Sources */,
 				EECB982C251E45B300C04ED3 /* Frameworks */,
 				EECB982D251E45B300C04ED3 /* Resources */,
@@ -184,6 +387,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EECB9829251E45B200C04ED3 /* LaunchScreen.storyboard in Resources */,
+				EEFDDFE7251E93B0004BDEA9 /* PokemonCell.xib in Resources */,
+				EEFDE004251EA7DD004BDEA9 /* GothamRounded-Bold.otf in Resources */,
+				EEFDE003251EA7DA004BDEA9 /* GothamRounded-Book.otf in Resources */,
+				EEFDE005251EA7E0004BDEA9 /* GothamRounded-Medium.otf in Resources */,
 				EECB9826251E45B200C04ED3 /* Assets.xcassets in Resources */,
 				EECB9821251E45AF00C04ED3 /* Main.storyboard in Resources */,
 			);
@@ -198,15 +405,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FE97921935FA0DCEB9519EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2981DED16156D23823B202BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiseEmotionsTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0DA8064DF1D03B0FE447AF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiseEmotionsTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EECB9812251E45AF00C04ED3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EECB981E251E45AF00C04ED3 /* ViewController.swift in Sources */,
+				EECB981E251E45AF00C04ED3 /* PokemoneListViewController.swift in Sources */,
+				EEFDDFFE251E95C6004BDEA9 /* UIFontExtension.swift in Sources */,
+				EEFDDFF5251E94F1004BDEA9 /* CommonLabels.swift in Sources */,
 				EECB981A251E45AF00C04ED3 /* AppDelegate.swift in Sources */,
-				EECB981C251E45AF00C04ED3 /* SceneDelegate.swift in Sources */,
+				EE7E2BCC251E923E00BBFB8C /* Utilities.swift in Sources */,
+				EEFDE007251EAE6E004BDEA9 /* PokemonDetailViewModel.swift in Sources */,
+				EECB9845251E4A4800C04ED3 /* PokemonListViewModel.swift in Sources */,
+				EECB9848251E4F7600C04ED3 /* Constants.swift in Sources */,
+				EEFDE000251EA15C004BDEA9 /* Utils.swift in Sources */,
+				EEFDDFE6251E93B0004BDEA9 /* PokemonCell.swift in Sources */,
+				EEFDDFF2251E94E7004BDEA9 /* CustomFont.swift in Sources */,
+				EE98F417251EBAE60085A353 /* PokemonImageCell.swift in Sources */,
+				EEFDE00D251EB61A004BDEA9 /* PokemonDetailsViewController.swift in Sources */,
+				EEFDDFF1251E94E7004BDEA9 /* Fonts.swift in Sources */,
+				EEFDDFF8251E956A004BDEA9 /* CustomLabel.swift in Sources */,
+				EEFDE002251EA6BC004BDEA9 /* ThemeUtils.swift in Sources */,
+				EEFDE009251EAE9D004BDEA9 /* PokemonDetailsModel.swift in Sources */,
+				EECB9841251E498500C04ED3 /* PokemonModel.swift in Sources */,
 				EECB9824251E45AF00C04ED3 /* WiseEmotionsTest.xcdatamodeld in Sources */,
+				EEFDDFF0251E94E7004BDEA9 /* FontConvertible.swift in Sources */,
+				EEFDDFFB251E958F004BDEA9 /* Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +586,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -352,7 +640,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -364,11 +652,13 @@
 		};
 		EECB9839251E45B300C04ED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C952C5CDDEECB61EE388CEA4 /* Pods-WiseEmotionsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TA82UEXLK6;
 				INFOPLIST_FILE = WiseEmotionsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,11 +672,13 @@
 		};
 		EECB983A251E45B300C04ED3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49C275F37AB0FFECE6546157 /* Pods-WiseEmotionsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TA82UEXLK6;
 				INFOPLIST_FILE = WiseEmotionsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,6 +692,7 @@
 		};
 		EECB983C251E45B300C04ED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67CD154EC5195C9DFA353AC /* Pods-WiseEmotionsTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -422,6 +715,7 @@
 		};
 		EECB983D251E45B300C04ED3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E078E2868694696228DF4CD0 /* Pods-WiseEmotionsTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

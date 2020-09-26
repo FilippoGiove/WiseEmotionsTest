@@ -1,24 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pokemone List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PokemoneListViewController" id="BYZ-38-t0r" customClass="PokemoneListViewController" customModule="WiseEmotionsTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="koK-DB-I4d">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zKl-ND-bAK">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vth-mM-kif"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Wm0-QP-Bku"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="koK-DB-I4d" secondAttribute="bottom" id="7gQ-DD-bR8"/>
+                            <constraint firstItem="koK-DB-I4d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hQ1-u7-EXj"/>
+                            <constraint firstItem="koK-DB-I4d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pSh-sv-9nY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="koK-DB-I4d" secondAttribute="trailing" id="v06-Yg-peK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="koK-DB-I4d" id="dxl-iU-gMY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-25" y="125"/>
+        </scene>
+        <!--Pokemon Details View Controller-->
+        <scene sceneID="Yyo-tx-pqd">
+            <objects>
+                <viewController storyboardIdentifier="PokemonDetailsViewController" id="lfe-Nk-hee" customClass="PokemonDetailsViewController" customModule="WiseEmotionsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z1T-Rh-Pef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-RP-YhS" customClass="Bold20Label" customModule="WiseEmotionsTest" customModuleProvider="target">
+                                <rect key="frame" x="10" y="54" width="394" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bub-HU-CsI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2GW-le-Lgm">
+                                <rect key="frame" x="10" y="114" width="394" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9fg-Uh-x4D"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vew-nT-wAK">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonImageCell" id="2Qa-Vy-sCH" customClass="PokemonImageCell" customModule="WiseEmotionsTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-14" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yQI-Wu-RbK">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ux-PG-ciE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5Ux-PG-ciE" firstAttribute="top" secondItem="yQI-Wu-RbK" secondAttribute="top" id="Mv3-PL-b3D"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Ux-PG-ciE" secondAttribute="bottom" id="XaY-Xb-If8"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Ux-PG-ciE" secondAttribute="trailing" id="fXf-te-aq4"/>
+                                                <constraint firstItem="5Ux-PG-ciE" firstAttribute="leading" secondItem="yQI-Wu-RbK" secondAttribute="leading" id="uhK-RE-Rzo"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="5Ux-PG-ciE" id="KzO-5i-uTD"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lfe-Nk-hee" id="X6C-zI-LYn"/>
+                                    <outlet property="delegate" destination="lfe-Nk-hee" id="fWP-aV-BOK"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fTf-0w-5TE" firstAttribute="trailing" secondItem="mxT-RP-YhS" secondAttribute="trailing" constant="10" id="NnC-Kk-0qb"/>
+                            <constraint firstItem="2GW-le-Lgm" firstAttribute="leading" secondItem="fTf-0w-5TE" secondAttribute="leading" constant="10" id="VMs-dN-ChX"/>
+                            <constraint firstItem="fTf-0w-5TE" firstAttribute="trailing" secondItem="2GW-le-Lgm" secondAttribute="trailing" constant="10" id="dGL-40-jYt"/>
+                            <constraint firstItem="2GW-le-Lgm" firstAttribute="top" secondItem="mxT-RP-YhS" secondAttribute="bottom" constant="20" id="qo3-iD-hA3"/>
+                            <constraint firstItem="mxT-RP-YhS" firstAttribute="leading" secondItem="fTf-0w-5TE" secondAttribute="leading" constant="10" id="wKf-XV-fhH"/>
+                            <constraint firstItem="mxT-RP-YhS" firstAttribute="top" secondItem="fTf-0w-5TE" secondAttribute="top" constant="10" id="xzc-w8-xtZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fTf-0w-5TE"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagesCollectionView" destination="2GW-le-Lgm" id="bBW-KR-hLv"/>
+                        <outlet property="nameLabel" destination="mxT-RP-YhS" id="j5c-hZ-vDA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tvi-Fv-1Bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034.7826086956522" y="124.55357142857142"/>
         </scene>
     </scenes>
 </document>
