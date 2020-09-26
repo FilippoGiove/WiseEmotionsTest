@@ -1,6 +1,0 @@
-framework module Pods_WiseEmotionsTestTests {
-  umbrella header "Pods-WiseEmotionsTestTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
