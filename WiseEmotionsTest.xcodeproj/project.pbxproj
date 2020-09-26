@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,12 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		49C275F37AB0FFECE6546157 /* Pods-WiseEmotionsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTest.release.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest.release.xcconfig"; sourceTree = "<group>"; };
+		4CFBA8329CE2FBF7A4CDB43E /* Pods-WiseEmotionsTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTestTests.debug.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTestTests/Pods-WiseEmotionsTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		516D5C52650A6E05C1873511 /* Pods_WiseEmotionsTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiseEmotionsTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4045F2F9F43849FBAD913E /* Pods_WiseEmotionsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiseEmotionsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C952C5CDDEECB61EE388CEA4 /* Pods-WiseEmotionsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTest.debug.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest.debug.xcconfig"; sourceTree = "<group>"; };
-		E078E2868694696228DF4CD0 /* Pods-WiseEmotionsTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTestTests.release.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTestTests/Pods-WiseEmotionsTestTests.release.xcconfig"; sourceTree = "<group>"; };
-		E67CD154EC5195C9DFA353AC /* Pods-WiseEmotionsTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTestTests.debug.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTestTests/Pods-WiseEmotionsTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97C0ED4F1ECC6E8779D0AE8E /* Pods-WiseEmotionsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTest.release.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest.release.xcconfig"; sourceTree = "<group>"; };
+		9FDA5D577353AAC227BC2BAF /* Pods-WiseEmotionsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTest.debug.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A901DAD6EF83BE9EEF9DF1BE /* Pods-WiseEmotionsTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseEmotionsTestTests.release.xcconfig"; path = "Target Support Files/Pods-WiseEmotionsTestTests/Pods-WiseEmotionsTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE7E2BCB251E923E00BBFB8C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		EE98F416251EBAE60085A353 /* PokemonImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImageCell.swift; sourceTree = "<group>"; };
 		EECB9816251E45AF00C04ED3 /* WiseEmotionsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiseEmotionsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,14 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B75CF1397519B633575F7C0 /* Pods */ = {
+		121A5F2F055602DEAD944F1C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C952C5CDDEECB61EE388CEA4 /* Pods-WiseEmotionsTest.debug.xcconfig */,
-				49C275F37AB0FFECE6546157 /* Pods-WiseEmotionsTest.release.xcconfig */,
-				E67CD154EC5195C9DFA353AC /* Pods-WiseEmotionsTestTests.debug.xcconfig */,
-				E078E2868694696228DF4CD0 /* Pods-WiseEmotionsTestTests.release.xcconfig */,
+				9FDA5D577353AAC227BC2BAF /* Pods-WiseEmotionsTest.debug.xcconfig */,
+				97C0ED4F1ECC6E8779D0AE8E /* Pods-WiseEmotionsTest.release.xcconfig */,
+				4CFBA8329CE2FBF7A4CDB43E /* Pods-WiseEmotionsTestTests.debug.xcconfig */,
+				A901DAD6EF83BE9EEF9DF1BE /* Pods-WiseEmotionsTestTests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,8 +139,8 @@
 				EECB9818251E45AF00C04ED3 /* WiseEmotionsTest */,
 				EECB9832251E45B300C04ED3 /* WiseEmotionsTestTests */,
 				EECB9817251E45AF00C04ED3 /* Products */,
-				7B75CF1397519B633575F7C0 /* Pods */,
 				B4B6C6B6E973232C0E13BB3D /* Frameworks */,
+				121A5F2F055602DEAD944F1C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,7 +314,6 @@
 				EECB9812251E45AF00C04ED3 /* Sources */,
 				EECB9813251E45AF00C04ED3 /* Frameworks */,
 				EECB9814251E45AF00C04ED3 /* Resources */,
-				0FE97921935FA0DCEB9519EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,23 +406,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FE97921935FA0DCEB9519EE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiseEmotionsTest/Pods-WiseEmotionsTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2981DED16156D23823B202BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -652,7 +635,7 @@
 		};
 		EECB9839251E45B300C04ED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C952C5CDDEECB61EE388CEA4 /* Pods-WiseEmotionsTest.debug.xcconfig */;
+			baseConfigurationReference = 9FDA5D577353AAC227BC2BAF /* Pods-WiseEmotionsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,7 +655,7 @@
 		};
 		EECB983A251E45B300C04ED3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C275F37AB0FFECE6546157 /* Pods-WiseEmotionsTest.release.xcconfig */;
+			baseConfigurationReference = 97C0ED4F1ECC6E8779D0AE8E /* Pods-WiseEmotionsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -692,7 +675,7 @@
 		};
 		EECB983C251E45B300C04ED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E67CD154EC5195C9DFA353AC /* Pods-WiseEmotionsTestTests.debug.xcconfig */;
+			baseConfigurationReference = 4CFBA8329CE2FBF7A4CDB43E /* Pods-WiseEmotionsTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -715,7 +698,7 @@
 		};
 		EECB983D251E45B300C04ED3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E078E2868694696228DF4CD0 /* Pods-WiseEmotionsTestTests.release.xcconfig */;
+			baseConfigurationReference = A901DAD6EF83BE9EEF9DF1BE /* Pods-WiseEmotionsTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

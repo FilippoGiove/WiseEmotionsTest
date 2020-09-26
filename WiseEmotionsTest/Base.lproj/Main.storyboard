@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -59,16 +60,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-RP-YhS" customClass="Bold20Label" customModule="WiseEmotionsTest" customModuleProvider="target">
-                                <rect key="frame" x="10" y="54" width="394" height="40"/>
+                                <rect key="frame" x="10" y="94" width="394" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Bub-HU-CsI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="PokemonYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2GW-le-Lgm">
-                                <rect key="frame" x="10" y="114" width="394" height="100"/>
+                                <rect key="frame" x="10" y="154" width="394" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="9fg-Uh-x4D"/>
@@ -108,21 +109,56 @@
                                     <outlet property="delegate" destination="lfe-Nk-hee" id="fWP-aV-BOK"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYk-iW-cJ1" customClass="Medium16Label" customModule="WiseEmotionsTest" customModuleProvider="target">
+                                <rect key="frame" x="10" y="294" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="PokemonBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTF-F7-WfZ" customClass="Medium16Label" customModule="WiseEmotionsTest" customModuleProvider="target">
+                                <rect key="frame" x="10" y="335" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="PokemonBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGH-Sy-Gs0">
+                                <rect key="frame" x="364" y="54" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Iwr-4S-0sw"/>
+                                    <constraint firstAttribute="height" constant="40" id="qaC-Xo-9qX"/>
+                                </constraints>
+                                <color key="tintColor" name="PokemonBlueColor"/>
+                                <state key="normal" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="tapOnClose:" destination="lfe-Nk-hee" eventType="touchUpInside" id="1Cm-KP-1Zb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="fTf-0w-5TE" firstAttribute="trailing" secondItem="gTF-F7-WfZ" secondAttribute="trailing" constant="10" id="AnY-xl-eiV"/>
+                            <constraint firstItem="gTF-F7-WfZ" firstAttribute="leading" secondItem="fTf-0w-5TE" secondAttribute="leading" constant="10" id="Ew1-vU-bqH"/>
+                            <constraint firstItem="ZYk-iW-cJ1" firstAttribute="top" secondItem="2GW-le-Lgm" secondAttribute="bottom" constant="40" id="GAH-bI-tiE"/>
+                            <constraint firstItem="fTf-0w-5TE" firstAttribute="trailing" secondItem="ZYk-iW-cJ1" secondAttribute="trailing" constant="10" id="Lky-Ih-XLr"/>
                             <constraint firstItem="fTf-0w-5TE" firstAttribute="trailing" secondItem="mxT-RP-YhS" secondAttribute="trailing" constant="10" id="NnC-Kk-0qb"/>
                             <constraint firstItem="2GW-le-Lgm" firstAttribute="leading" secondItem="fTf-0w-5TE" secondAttribute="leading" constant="10" id="VMs-dN-ChX"/>
                             <constraint firstItem="fTf-0w-5TE" firstAttribute="trailing" secondItem="2GW-le-Lgm" secondAttribute="trailing" constant="10" id="dGL-40-jYt"/>
+                            <constraint firstItem="ZYk-iW-cJ1" firstAttribute="leading" secondItem="fTf-0w-5TE" secondAttribute="leading" constant="10" id="fTC-xE-wUa"/>
+                            <constraint firstItem="mxT-RP-YhS" firstAttribute="top" secondItem="VGH-Sy-Gs0" secondAttribute="bottom" id="fb6-A3-ax2"/>
+                            <constraint firstItem="gTF-F7-WfZ" firstAttribute="top" secondItem="ZYk-iW-cJ1" secondAttribute="bottom" constant="20" id="jsJ-yR-ID0"/>
+                            <constraint firstItem="fTf-0w-5TE" firstAttribute="trailing" secondItem="ZYk-iW-cJ1" secondAttribute="trailing" constant="10" id="no9-Rq-EAA"/>
+                            <constraint firstItem="fTf-0w-5TE" firstAttribute="trailing" secondItem="VGH-Sy-Gs0" secondAttribute="trailing" constant="10" id="oY9-lH-NPB"/>
                             <constraint firstItem="2GW-le-Lgm" firstAttribute="top" secondItem="mxT-RP-YhS" secondAttribute="bottom" constant="20" id="qo3-iD-hA3"/>
+                            <constraint firstItem="VGH-Sy-Gs0" firstAttribute="top" secondItem="fTf-0w-5TE" secondAttribute="top" constant="10" id="r5N-V4-Awb"/>
                             <constraint firstItem="mxT-RP-YhS" firstAttribute="leading" secondItem="fTf-0w-5TE" secondAttribute="leading" constant="10" id="wKf-XV-fhH"/>
-                            <constraint firstItem="mxT-RP-YhS" firstAttribute="top" secondItem="fTf-0w-5TE" secondAttribute="top" constant="10" id="xzc-w8-xtZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fTf-0w-5TE"/>
                     </view>
                     <connections>
                         <outlet property="imagesCollectionView" destination="2GW-le-Lgm" id="bBW-KR-hLv"/>
                         <outlet property="nameLabel" destination="mxT-RP-YhS" id="j5c-hZ-vDA"/>
+                        <outlet property="tipologiesLabel" destination="gTF-F7-WfZ" id="Z57-o1-IiV"/>
+                        <outlet property="weightLabel" destination="ZYk-iW-cJ1" id="Dlt-wu-YN0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvi-Fv-1Bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -130,4 +166,13 @@
             <point key="canvasLocation" x="1034.7826086956522" y="124.55357142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="PokemonBlueColor">
+            <color red="0.21568627450980393" green="0.38039215686274508" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PokemonYellowColor">
+            <color red="0.99607843137254903" green="0.792156862745098" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

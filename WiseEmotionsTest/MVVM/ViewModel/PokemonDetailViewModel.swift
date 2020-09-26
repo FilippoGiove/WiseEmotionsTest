@@ -26,7 +26,6 @@ class PokemonDetailViewModel {
 
     public func fetchDetail() {
         if let url = mainInfo?.url{
-            NSLog("url--->%@",url)
             getDetails(from:url, completion: {
                 details,error in
                 if let _ = error{
@@ -44,6 +43,8 @@ class PokemonDetailViewModel {
 
 extension PokemonDetailViewModel {
     private func getDetails(from url:String,completion: @escaping (PokemonDetailsModel?, Error?) -> Void) {
+        NSLog("DETAILS:%@",url)
+
         if let url = URL(string: url){
             let session = URLSession.shared
             let task = session.dataTask(with: url, completionHandler: {
@@ -108,7 +109,6 @@ extension PokemonDetailViewModel {
                                         }
                                     }
                                 }
-                                NSLog("NOME--->%@",namePokemon)
                                 let details = PokemonDetailsModel(name: namePokemon, id: idPokemon, weight: weightPokemon, height: heightPokemon, images: urlImages, types: typesPokemon)
                                 completion(details,nil)
                             }

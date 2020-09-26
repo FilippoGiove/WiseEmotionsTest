@@ -14,8 +14,11 @@ class PokemonDetailsViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: Bold20Label!
     @IBOutlet weak var imagesCollectionView: UICollectionView!
-    
 
+    @IBOutlet weak var weightLabel: Medium16Label!
+    
+    
+    @IBOutlet weak var tipologiesLabel: Medium16Label!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +27,35 @@ class PokemonDetailsViewController: UIViewController {
         viewModel.details.bind { [weak self] info in
             DispatchQueue.main.async {
                 self?.nameLabel.text = info.name.uppercased()
+                self?.weightLabel.text = "WEIGHT: \(info.weight)"
+                var types = ""
+                for t in info.types{
+                    if(types.isEmpty){
+                        types = t
+                    }
+                    else{
+                        types = "\(types), \(t)"
+                    }
+                }
+                if(types.isEmpty){
+                    self?.tipologiesLabel.text = "TYPOLOGY: ND"
+                }
+                else{
+                    self?.tipologiesLabel.text = "TYPOLOGY: \(types)"
+
+                }
+
+
                 self?.imagesCollectionView.reloadData()
             }
         }
         // Do any additional setup after loading the view.
     }
-    
+
+
+    @IBAction func tapOnClose(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

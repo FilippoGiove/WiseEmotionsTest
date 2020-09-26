@@ -6,8 +6,6 @@ target 'WiseEmotionsTest' do
   use_frameworks!
 
   # Pods for WiseEmotionsTest
-  pod 'SDWebImage'
-
 
   target 'WiseEmotionsTestTests' do
     inherit! :search_paths
