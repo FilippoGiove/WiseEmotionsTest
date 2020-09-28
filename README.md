@@ -1,6 +1,6 @@
 # Wise Emotions Test
 
-**Wise Emotions Test** è una semplice applicazione iOS che utilizza le Pokemon API per mostrare un elenco di Pokemon.
+**Wise Emotions Test** è una semplice applicazione iOS che utilizza le ([Pokemon API](https://pokeapi.co)) per mostrare un elenco di Pokemon.
 ## Preview
 ![screencast](http://filippo-giove.com/public/image0.png)
 ![screencast](http://filippo-giove.com/public/image1.png)
