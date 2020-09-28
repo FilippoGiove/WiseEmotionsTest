@@ -7,27 +7,29 @@
 //
 
 import UIKit
+import SDWebImage
 
 
 class Utils{
     static func loadImageFromUrl(url: String, view: UIImageView){
 
-        // Create Url from string
-        let url = NSURL(string: url)!
+        if let url = NSURL(string: url){
+            view.sd_setImage(with: url as URL, completed: nil)
+        }
 
-        // Download task:
-        // - sharedSession = global NSURLCache, NSHTTPCookieStorage and NSURLCredentialStorage objects.
+        //NO PODS
+        /*
         let task = URLSession.shared.dataTask(with: url as URL) { (responseData, responseUrl, error) -> Void in
             if let data = responseData{
-                // execute in UI thread
                 DispatchQueue.main.async {
                     view.image = UIImage(data: data)
                 }
             }
         }
+        task.resume()*/
 
-        // Run task
-        task.resume()
+
+
     }
 
 
