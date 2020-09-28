@@ -21,6 +21,4 @@ Si è utilizzato il pattern MVVM.
 [SDWebImage](https://github.com/SDWebImage/SDWebImage), utilizzando CocoaPoads. Questa libreria è stata scelta per poter visualizzare (ed effettuarne il caching) delle immagine (remote) visualizzate nell'app.
 
 ## Creator
-
-Filippo Giove 
-[website](http://filippo-giove.com)
+[Filippo Giove](http://filippo-giove.com)
