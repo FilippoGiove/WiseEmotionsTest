@@ -18,7 +18,7 @@ Si è utilizzato il pattern MVVM.
 
 ## Dependencies
 
-SDImage, utilizzando CocoaPoads. Questa libreria è stata scelta per poter visualizzare (ed effettuarne il caching) delle immagine (remote) visualizzate in app.
+SDWebImage, utilizzando CocoaPoads. Questa libreria è stata scelta per poter visualizzare (ed effettuarne il caching) delle immagine (remote) visualizzate in app.
 
 ## Creator
 
