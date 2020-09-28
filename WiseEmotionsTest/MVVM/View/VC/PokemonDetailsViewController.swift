@@ -14,9 +14,13 @@ class PokemonDetailsViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: Bold20Label!
     @IBOutlet weak var imagesCollectionView: UICollectionView!
+    @IBOutlet weak var statsCollectionView: UICollectionView!
 
+    @IBOutlet weak var statsLabel: Bold20Label!
+
+    @IBOutlet weak var abilitiesLabel: Medium16Label!
     @IBOutlet weak var weightLabel: Medium16Label!
-    
+
     
     @IBOutlet weak var tipologiesLabel: Medium16Label!
 
@@ -24,19 +28,19 @@ class PokemonDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         viewModel.fetchDetail()
+        viewModel.noDetails.bind { [weak self] value in
+            if(value){
+                self?.showNoDetailsError()
+            }
+        }
         viewModel.details.bind { [weak self] info in
             DispatchQueue.main.async {
+                self?.statsLabel.text = "STATISTICS"
+                self?.statsLabel.textColor = UIColor.white
+
                 self?.nameLabel.text = info.name.uppercased()
                 self?.weightLabel.text = "WEIGHT: \(info.weight)"
-                var types = ""
-                for t in info.types{
-                    if(types.isEmpty){
-                        types = t
-                    }
-                    else{
-                        types = "\(types), \(t)"
-                    }
-                }
+                let types = info.getTypologiesConcatStr()
                 if(types.isEmpty){
                     self?.tipologiesLabel.text = "TYPOLOGY: ND"
                 }
@@ -45,11 +49,31 @@ class PokemonDetailsViewController: UIViewController {
 
                 }
 
+                let abilities = info.getAbilitiesConcatStr()
+                if(abilities.isEmpty){
+                    self?.abilitiesLabel.text = "ABILITIES: ND"
+                }
+                else{
+                    self?.abilitiesLabel.text = "ABILITIES: \(abilities)"
 
+                }
+                if(info.images.count > 0){
+                    self?.imagesCollectionView.flashScrollIndicators()
+                }
                 self?.imagesCollectionView.reloadData()
+                self?.statsCollectionView.reloadData()
+
             }
         }
         // Do any additional setup after loading the view.
+    }
+
+    func showNoDetailsError(){
+        let alert = UIAlertController(title: "Attention", message: "No pokemon details available. Please check your internet connection ans retry.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Back", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: {
+            self.dismiss(animated: true, completion: nil)
+        })
     }
 
 
@@ -74,18 +98,36 @@ extension PokemonDetailsViewController:UICollectionViewDataSource,UICollectionVi
         1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.details.value.images.count
+        if(collectionView == statsCollectionView){
+            return viewModel.details.value.stats.count
+        }
+        else if(collectionView == imagesCollectionView){
+            return viewModel.details.value.images.count
+        }
+        else{
+            return 0
+        }
 
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       
         let index = indexPath.item
-
-        let imageUrl = viewModel.details.value.images[index]
-        let cell = collectionView
-            .dequeueReusableCell(withReuseIdentifier: PokemonImageCell.ReuseIndetifier, for: indexPath) as! PokemonImageCell
-        cell.initWithData(urlString: imageUrl)
-        return cell
+        if(collectionView == statsCollectionView){
+            let statModel = viewModel.details.value.stats[index]
+            let cell = collectionView
+                .dequeueReusableCell(withReuseIdentifier: PokemonStatCell.ReuseIndetifier, for: indexPath) as! PokemonStatCell
+            cell.initWithData(value: statModel.toString())
+            return cell
+        }
+        else if(collectionView == imagesCollectionView){
+            let imageUrl = viewModel.details.value.images[index]
+            let cell = collectionView
+                .dequeueReusableCell(withReuseIdentifier: PokemonImageCell.ReuseIndetifier, for: indexPath) as! PokemonImageCell
+            cell.initWithData(urlString: imageUrl)
+            return cell
+        }
+        else{
+            return UICollectionViewCell()
+        }
 
     }
 
@@ -102,6 +144,14 @@ extension PokemonDetailsViewController:UICollectionViewDataSource,UICollectionVi
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 100)
+        if(collectionView == statsCollectionView){
+            return CGSize(width: collectionView.frame.width, height: 30)
+        }
+        else if(collectionView == imagesCollectionView){
+            return CGSize(width: 100, height: 100)
+        }
+        else{
+            return CGSize(width: 0, height: 0)
+        }
     }
 }

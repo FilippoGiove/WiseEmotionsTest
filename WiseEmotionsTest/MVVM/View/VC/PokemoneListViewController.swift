@@ -23,6 +23,13 @@ class PokemoneListViewController: UIViewController {
            }
 
     }
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        guard let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        flowLayout.invalidateLayout()
+    }
 
 
 }
@@ -71,7 +78,6 @@ extension PokemoneListViewController:UICollectionViewDataSource,UICollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = indexPath.item
         let model = self.viewModel.pokemons.value[index]
-
         let vcDetails = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PokemonDetailsViewController") as! PokemonDetailsViewController
         vcDetails.viewModel = PokemonDetailViewModel(of: model)
         self.present(vcDetails, animated: true, completion: nil)

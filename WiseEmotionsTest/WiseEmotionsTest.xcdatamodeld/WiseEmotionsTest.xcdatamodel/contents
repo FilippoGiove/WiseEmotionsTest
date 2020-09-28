@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Pokemon" representedClassName="Pokemon" syncable="YES" codeGenerationType="class">
+        <attribute name="abilities" optional="YES" attributeType="String"/>
+        <attribute name="idPokemon" optional="YES" attributeType="String"/>
+        <attribute name="images" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="typologies" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="String"/>
+        <relationship name="statistcs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Statistic" inverseName="pokemon" inverseEntity="Statistic"/>
+    </entity>
+    <entity name="Statistic" representedClassName="Statistic" syncable="YES" codeGenerationType="class">
+        <attribute name="baseStat" optional="YES" attributeType="String"/>
+        <attribute name="nameStat" optional="YES" attributeType="String"/>
+        <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="statistcs" inverseEntity="Pokemon"/>
+    </entity>
+    <elements>
+        <element name="Pokemon" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="Statistic" positionX="-63" positionY="36" width="128" height="28"/>
+    </elements>
 </model>

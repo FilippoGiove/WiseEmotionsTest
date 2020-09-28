@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HYn-3b-h7k">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemonAPI" translatesAutoresizingMaskIntoConstraints="NO" id="HYn-3b-h7k">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="392-oZ-Akm" customClass="Bold20Label" customModule="WiseEmotionsTest" customModuleProvider="target">
@@ -70,6 +70,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="pokemonAPI" width="128.5" height="51.5"/>
         <image name="rightArrow" width="14" height="24"/>
         <namedColor name="PokemonBlueColor">
             <color red="0.21568627450980393" green="0.38039215686274508" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

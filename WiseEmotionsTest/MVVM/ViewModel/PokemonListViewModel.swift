@@ -16,7 +16,18 @@ class PokemonListViewModel {
 
     // MARK: - Initialization
     init() {
-        fetchNextPage()
+        if(Reachability.isConnectedToNetwork()){
+            fetchNextPage()
+        }
+        else{
+            let pokemonFromDB = DataManager.instance().getAllPokemons()
+            var fetched:[PokemonModel] = []
+            for p in pokemonFromDB{
+                let pokemon = PokemonModel(name: p.name ?? "", url: p.url ?? "")
+                fetched.append(pokemon)
+            }
+            self.pokemons.value = fetched
+        }
     }
 
     public func fetchNextPage() {
@@ -58,6 +69,7 @@ extension PokemonListViewModel {
                                     let url = (pokemonDictionary["url"] as? String) ?? ""
 
                                     let p = PokemonModel(name: name, url: url)
+                                    let _ = DataManager.instance().insertOrUpdatePokemon(name: name, url: url, idPokemon: "", weight: nil, images: nil, typologies: nil, abilities: nil)
                                     newPokemons.append(p)
                                 }
                                 completion(newPokemons,nil)

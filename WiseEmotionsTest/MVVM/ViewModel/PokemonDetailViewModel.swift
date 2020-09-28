@@ -12,14 +12,33 @@ import UIKit
 
 class PokemonDetailViewModel {
     var mainInfo:PokemonModel!
-    var details = Box(PokemonDetailsModel(name: "", id: "", weight: "", height: "", images: [], types: []))
+    var details = Box(PokemonDetailsModel(name: "", id: "", weight: "", url: "", images: [], types: [], abilities: [], stats: []))
     var index = 0
     var nextPage:String?=nil
+
+    var noDetails = Box(false)
 
     // MARK: - Initialization
     init(of pokemon:PokemonModel) {
         self.mainInfo = pokemon
-        fetchDetail()
+        if(Reachability.isConnectedToNetwork()){
+            fetchDetail()
+        }
+        else{
+            if let saved = DataManager.instance().getPokemon(withName: pokemon.name){
+                let value = PokemonDetailsModel.fromDBModel(pokemon: saved)
+                if(value.detailsNotLoaded()){
+                    self.noDetails.value = true
+                }
+                else{
+                    self.details.value = value
+                }
+            }
+            else{
+                self.noDetails.value = true
+            }
+        }
+
     }
 
     
@@ -29,7 +48,12 @@ class PokemonDetailViewModel {
             getDetails(from:url, completion: {
                 details,error in
                 if let _ = error{
-                    self.details.value = PokemonDetailsModel(name: "", id: "", weight: "", height: "", images: [], types: [])
+                    if let saved = DataManager.instance().getPokemon(withName: self.mainInfo.name){
+                        self.details.value = PokemonDetailsModel.fromDBModel(pokemon: saved)
+                    }
+                    else{
+                        self.noDetails.value = true
+                    }
                 }
                 else{
                     self.details.value = details!
@@ -43,11 +67,9 @@ class PokemonDetailViewModel {
 
 extension PokemonDetailViewModel {
     private func getDetails(from url:String,completion: @escaping (PokemonDetailsModel?, Error?) -> Void) {
-        NSLog("DETAILS:%@",url)
-
-        if let url = URL(string: url){
+        if let _url = URL(string: url){
             let session = URLSession.shared
-            let task = session.dataTask(with: url, completionHandler: {
+            let task = session.dataTask(with: _url, completionHandler: {
                             data, response, error in
                     if(error != nil){
                         completion(nil,error)
@@ -59,9 +81,11 @@ extension PokemonDetailViewModel {
                                 var namePokemon = ""
                                 var idPokemon = ""
                                 var weightPokemon = ""
-                                var heightPokemon = ""
                                 var urlImages:[String] = []
                                 var typesPokemon:[String] = []
+                                var abilitiesPokemon:[String] = []
+                                var statsPokemon:[PokemonStat] = []
+
                                 if let name = jsonResult["name"] as? String{
                                     namePokemon = name
                                 }
@@ -71,9 +95,8 @@ extension PokemonDetailViewModel {
                                 if let weight = jsonResult["weight"]{
                                     weightPokemon = "\(weight)"
                                 }
-                                if let height = jsonResult["height"] as? String{
-                                    heightPokemon = "\(height)"
-                                }
+
+
                                 if let spritesDictionary = jsonResult["sprites"] as? NSDictionary{
                                     if let back_female = spritesDictionary["back_female"] as? String{
                                         urlImages.append(back_female)
@@ -109,7 +132,46 @@ extension PokemonDetailViewModel {
                                         }
                                     }
                                 }
-                                let details = PokemonDetailsModel(name: namePokemon, id: idPokemon, weight: weightPokemon, height: heightPokemon, images: urlImages, types: typesPokemon)
+                                if let abilities = jsonResult["abilities"] {
+                                    for ability in abilities as! [AnyObject]{
+                                        if let abilityDict = ability["ability"] as? NSDictionary{
+                                            if let abilityStr = abilityDict["name"] as? String{
+                                                abilitiesPokemon.append(abilityStr)
+                                            }
+
+                                        }
+                                    }
+                                }
+                                if let stats = jsonResult["stats"] {
+                                    for stat in stats as! [AnyObject]{
+                                        var value = ""
+                                        var name = ""
+                                        if let baseStat = stat["base_stat"] as? Int{
+                                            value = "\(baseStat)"
+                                        }
+                                        if let statDict = stat["stat"] as? NSDictionary{
+                                            if let statStr = statDict["name"] as? String{
+                                                name = statStr
+                                            }
+                                        }
+                                        if(!value.isEmpty && !name.isEmpty){
+                                            statsPokemon.append(PokemonStat(name: name, baseStat: value)
+)
+                                        }
+                                    }
+                                }
+                                let details = PokemonDetailsModel(name: namePokemon, id: idPokemon, weight: weightPokemon, url: url, images: urlImages, types: typesPokemon, abilities: abilitiesPokemon, stats: statsPokemon)
+
+
+                                let result = DataManager.instance().insertOrUpdatePokemon(name: namePokemon, url: url, idPokemon: idPokemon, weight: weightPokemon, images: details.getImagesConcatStr(), typologies: details.getTypologiesConcatStr(), abilities: details.getAbilitiesConcatStr())
+
+                                if(result){
+                                    let _ = DataManager.instance().deleteAllStatsOf(pokemonName: namePokemon)
+                                    for stat in statsPokemon{
+                                        DataManager.instance().insertStat(pokemonName: namePokemon, stat: stat)
+                                    }
+                                }
+
                                 completion(details,nil)
                             }
                         } catch {

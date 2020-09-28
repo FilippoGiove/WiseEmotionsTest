@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         ThemeUtils.apply(for: .shared)
+        DataManager.instance().initPersistentContainerContent()
         return true
     }
 
